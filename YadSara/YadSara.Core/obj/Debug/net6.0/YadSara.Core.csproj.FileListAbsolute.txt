@@ -1,0 +1,15 @@
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.AssemblyReference.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
