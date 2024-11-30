@@ -1,0 +1,285 @@
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.AssemblyReference.cache
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfoInputs.cache
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfo.cs
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.CoreCompileInputs.cache
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.deps.json
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.exe
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.exe
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.deps.json
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.runtimeconfig.json
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.dll
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.pdb
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.pdb
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.CopyComplete
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.dll
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\refint\YadSara.Data.dll
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.pdb
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.genruntimeconfig.cache
+E:\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\ref\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.AssemblyReference.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.GeneratedMSBuildEditorConfig.editorconfig
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfoInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfo.cs
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.CoreCompileInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\refint\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Humanizer.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Collections.Immutable.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Runtime.Caching.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Permissions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Windows.Extensions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara..58CF295A.Up2Date
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.genruntimeconfig.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\ref\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Humanizer.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Collections.Immutable.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Runtime.Caching.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Permissions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Windows.Extensions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.AssemblyReference.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.GeneratedMSBuildEditorConfig.editorconfig
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfoInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfo.cs
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.CoreCompileInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara..58CF295A.Up2Date
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\refint\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.genruntimeconfig.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\ref\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Humanizer.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Collections.Immutable.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Runtime.Caching.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Permissions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Windows.Extensions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.AssemblyReference.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.GeneratedMSBuildEditorConfig.editorconfig
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfoInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfo.cs
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.CoreCompileInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara..58CF295A.Up2Date
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\refint\YadSara.Data.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.genruntimeconfig.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\ref\YadSara.Data.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.deps.json
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.exe
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.exe
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.deps.json
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.runtimeconfig.json
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Data.pdb
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Humanizer.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Collections.Immutable.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Drawing.Common.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Runtime.Caching.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Security.Permissions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\System.Windows.Extensions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\bin\Debug\net6.0\YadSara.Core.pdb
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.AssemblyReference.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.GeneratedMSBuildEditorConfig.editorconfig
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfoInputs.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.AssemblyInfo.cs
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.csproj.CoreCompileInputs.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara..58CF295A.Up2Date
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\refint\YadSara.Data.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.pdb
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\YadSara.Data.genruntimeconfig.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Data\obj\Debug\net6.0\ref\YadSara.Data.dll

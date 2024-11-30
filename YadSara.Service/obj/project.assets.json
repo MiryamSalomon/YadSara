@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "YadSara.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/YadSara.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/YadSara.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "YadSara.Core/1.0.0": {
+      "type": "project",
+      "path": "../YadSara.Core/YadSara.Core.csproj",
+      "msbuildProject": "../YadSara.Core/YadSara.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "YadSara.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Service\\YadSara.Service.csproj",
+      "projectName": "YadSara.Service",
+      "projectPath": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Service\\YadSara.Service.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+              "projectPath": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

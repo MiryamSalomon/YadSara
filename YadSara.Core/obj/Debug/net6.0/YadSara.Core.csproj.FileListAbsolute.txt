@@ -1,0 +1,71 @@
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.AssemblyReference.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+E:\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\כג חשוון חדש\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\מרים סלומון\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+\\ZZ-FILESRV\Handesaim2\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
