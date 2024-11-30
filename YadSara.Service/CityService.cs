@@ -21,19 +21,7 @@ namespace YadSara.Service
         {
             return _cityRepository.GetAll();
         }
-        public City GetCity(int id)
-        {
-            return _cityRepository.GetById(id);
-        }
 
-        public City UpdateCity(City city)
-        {
-            return _cityRepository.Update(city);
-        }
-        public void DeleteCity(int id)
-        {
-             _cityRepository.Delete(id);
-        }
         public City AddCity(City city)
         {
             return _cityRepository.Add(city);

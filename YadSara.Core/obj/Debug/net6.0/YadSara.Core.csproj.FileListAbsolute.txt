@@ -69,3 +69,18 @@ T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Deb
 T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
 T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
 T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.exe
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.deps.json
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\bin\Debug\net6.0\YadSara.Core.pdb
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.AssemblyReference.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfoInputs.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.AssemblyInfo.cs
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.csproj.CoreCompileInputs.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\refint\YadSara.Core.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.pdb
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\YadSara.Core.genruntimeconfig.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Core\obj\Debug\net6.0\ref\YadSara.Core.dll

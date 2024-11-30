@@ -103,3 +103,24 @@ T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Service\obj\
 T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.pdb
 T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.genruntimeconfig.cache
 T:\Group B\NetCore\MiryamSalomon\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\ref\YadSara.Service.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.csproj.AssemblyReference.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.AssemblyInfoInputs.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.AssemblyInfo.cs
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.csproj.CoreCompileInputs.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\refint\YadSara.Service.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.pdb
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Core.deps.json
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Core.runtimeconfig.json
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Core.exe
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Service.exe
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Service.deps.json
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Service.runtimeconfig.json
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Service.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Service.pdb
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Core.dll
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\bin\Debug\net6.0\YadSara.Core.pdb
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.csproj.CopyComplete
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\YadSara.Service.genruntimeconfig.cache
+E:\24.11.24\YadSara P\YadSara\YadSara.Service\obj\Debug\net6.0\ref\YadSara.Service.dll
