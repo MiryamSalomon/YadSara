@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using YadSara.Core.Entities;
 using YadSara.Core.Services;
+using YadSara.Service;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,38 +20,61 @@ namespace YadSara.Controllers
 
         // GET: api/<LenderController>
         [HttpGet]
-        public IEnumerable<Lender> Get()
+        public ActionResult Get()
         {
-            return _lenderService.GetList();
+            return Ok( _lenderService.GetList());
         }
 
         // GET api/<LenderController>/5
         [HttpGet("{LenderId}")]
-        public Lender Get(string id)
+        public ActionResult Get(string id)
         {
-            return _lenderService.GetLender(id);
+            var lender = _lenderService.GetLender(id);
+            if (lender == null)
+            {
+                return NotFound();
+            }
+            return Ok(lender);
         }
 
         // POST api/<LenderController>
         [HttpPost]
-        public Lender  Post([FromBody] Lender l)
+        public ActionResult Post([FromBody] Lender l)
         {
-            return _lenderService.AddLender(l);
+            var lender = _lenderService.GetLender(l.lenderId);
+            if (lender == null)
+            {
+                return Ok(_lenderService.AddLender(l));
+            }
+            return Conflict();
         }
 
         // PUT api/<LenderController>/5
         [HttpPut("{id}")]
-        public Lender Put( [FromBody] Lender l)
+        public ActionResult Put( [FromBody] Lender l)
         {
-            return _lenderService.UpdateLender(l);
+            var lender = _lenderService.GetLender(l.lenderId);
+            if (lender == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(_lenderService.UpdateLender(l));
 
         }
 
         // DELETE api/<LenderController>/5
         [HttpDelete("{id}")]
-        public void Delete(string lenderId)
+        public ActionResult Delete(string lenderId)
         {
-           _lenderService.DeleteLender(lenderId);
+
+            var lender =_lenderService.GetLender(lenderId);
+            if (lender == null)
+            {
+                return NotFound();
+            }
+            
+            return Ok(_lenderService.DeleteLender(lenderId););
         }
     }
 }

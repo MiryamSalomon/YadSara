@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YadSara.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35b5560739b346916b5fc6df36f044402e5baac9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("YadSara.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YadSara.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
