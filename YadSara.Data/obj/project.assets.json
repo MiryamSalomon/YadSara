@@ -2057,23 +2057,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\student\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
+      "projectUniqueName": "T:\\Group B\\NetCore\\MiryamSalomon\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
       "projectName": "YadSara.Data",
-      "projectPath": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Data\\obj\\",
+      "projectPath": "T:\\Group B\\NetCore\\MiryamSalomon\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
+      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+      "outputPath": "T:\\Group B\\NetCore\\MiryamSalomon\\ד כסלו\\YadSara\\YadSara.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2082,14 +2082,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
-              "projectPath": "E:\\24.11.24\\YadSara P\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
+            "T:\\Group B\\NetCore\\MiryamSalomon\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+              "projectPath": "T:\\Group B\\NetCore\\MiryamSalomon\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
             }
           }
         }
@@ -2098,6 +2099,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2131,7 +2137,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -18,37 +18,60 @@ namespace YadSara.Controllers
 
         // GET: api/<Borrow>
         [HttpGet]
-        public IEnumerable<Borrow> Get()
+        public ActionResult Get()
         {
-            return _borrowService.GetList();
+            return Ok(_borrowService.GetList());
         }
 
         // GET api/<Borrow>/5
         [HttpGet("{borrowId}")]
-        public Borrow Get(string borrowId)
+        public ActionResult Get(string borrowId)
         {
-            return _borrowService.GetBorrow(borrowId);
+            var borrow = _borrowService.GetBorrow(borrowId);
+            if (borrow == null)
+            {
+                return NotFound();
+            }
+            return Ok(borrow);
         }
 
         // POST api/<Borrow>
         [HttpPost]
-        public Borrow Post([FromBody] Borrow b)
+        public ActionResult Post([FromBody] Borrow b)
         {
-            return _borrowService.AddBorrow(b);
+            var borrow = _borrowService.GetBorrow(b.borrowId);
+            if (borrow == null)
+            {
+               return Ok(_borrowService.AddBorrow(b));
+            }
+            return Conflict();
         }
-
         // PUT api/<Borrow>/5
         [HttpPut("{borrow}")]
-        public Borrow Put( [FromBody] Borrow b)
+        public ActionResult Put( [FromBody] Borrow b)
         {
-            return _borrowService.UpdateBorrow(b);
+            var borrow = _borrowService.GetBorrow(b.borrowId);
+            if (borrow == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(_borrowService.UpdateBorrow(b));
         }
 
         // DELETE api/<Borrow>/5
         [HttpDelete("{id}")]
-        public void Delete(string borrowId)
+        public ActionResult Delete(string borrowId)
         {
-           _borrowService.DeleteBorrow(borrowId);
+
+            var borrow = _borrowService.GetBorrow(borrowId);
+            if (borrow == null)
+            {
+                return NotFound();
+            }
+
+            return Ok();    
+           
         }
     }
 }

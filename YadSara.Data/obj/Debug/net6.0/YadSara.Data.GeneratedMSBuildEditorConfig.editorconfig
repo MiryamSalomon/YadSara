@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = YadSara.Data
-build_property.ProjectDir = E:\24.11.24\YadSara P\YadSara\YadSara.Data\
+build_property.ProjectDir = T:\Group B\NetCore\MiryamSalomon\ד כסלו\YadSara\YadSara.Data\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

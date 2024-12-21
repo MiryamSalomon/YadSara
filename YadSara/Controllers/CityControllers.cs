@@ -19,16 +19,22 @@ namespace YadSara.Controllers
 
         // GET: api/<CityController>
         [HttpGet]
-        public IEnumerable<City> Get()
+        public ActionResult Get()
         {
-            return _cityService.GetList();
+            return Ok(_cityService.GetList());
         }
 
         // POST api/<CityController>
         [HttpPost]
-        public City Post([FromBody] City c)
+        public ActionResult Post([FromBody] City c)
         {
-          return _cityService.AddCity(c);
+            //var city = _cityService.ge(c.CityId);
+            //if (city == null)
+            //{
+                return Ok(_cityService.AddCity(c));
+            //}
+            //return Conflict();
+
         }
 
     }
