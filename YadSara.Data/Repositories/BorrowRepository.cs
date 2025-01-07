@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace YadSara.Data.Repositories
 {
@@ -19,29 +19,35 @@ namespace YadSara.Data.Repositories
         }
         public List<Borrow> GetAll()
         {
-            return _context.Borrow.ToList();
+
+            return _context.Borrow.Include(l => l.City).ToList();
         }
         public Borrow GetById(string id)
         {
-            return _context.Borrow.ToList().FirstOrDefault(bN => bN.borrowId == id);
+            return _context.Borrow.ToList().FirstOrDefault(bN => bN.BorrowId == id);
         }
         public Borrow Update(Borrow borrow)
         {
-            var index = _context.Borrow.ToList().FindIndex(f => f.borrowId == borrow.borrowId);
-            _context.Borrow.ToList()[index].borrowName = borrow.borrowName;
-            _context.Borrow.ToList()[index].address = borrow.address;
-            _context.Borrow.ToList()[index].phone = borrow.phone;
+            var index = _context.Borrow.ToList().FindIndex(f => f.BorrowId == borrow.BorrowId);
+            _context.Borrow.ToList()[index].BorrowName = borrow.BorrowName;
+            _context.Borrow.ToList()[index].Address = borrow.Address;
+            _context.Borrow.ToList()[index].Phone = borrow.Phone;
             _context.Borrow.ToList()[index].cityId = borrow.cityId;
+            _context.SaveChanges();
             return borrow;
         }
-        public void Delete(string id)
+        public Borrow Delete(string id)
         {
-            var index = _context.Borrow.ToList().FindIndex(f => f.borrowId.Equals( id));
-            _context.Borrow.ToList().RemoveAt(index);
+            var b = GetById(id);
+            _context.Borrow.Remove(b);
+            _context.SaveChanges();
+            return b;
+           
         }
         public Borrow Add(Borrow borrow )
         {
             _context.Borrow.Add(borrow);
+            _context.SaveChanges();
             return borrow;
         }
 

@@ -12,7 +12,7 @@ namespace YadSara.Core.Repositories
         public List<Borrow> GetAll();
         public Borrow GetById(string id);
         public Borrow Update(Borrow borrow);  
-        public void Delete(string id);
+        public Borrow Delete(string id);
         public Borrow Add(Borrow borrow);
 
 

@@ -500,3 +500,13 @@ E:\24.11.24\YadSara P\YadSara\YadSara\obj\Debug\net6.0\scopedcss\bundle\YadSara.
 E:\24.11.24\YadSara P\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.csproj.CopyComplete
 E:\24.11.24\YadSara P\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.genruntimeconfig.cache
 E:\24.11.24\YadSara P\YadSara\YadSara\obj\Debug\net6.0\ref\YadSara.Api.dll
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.csproj.AssemblyReference.cache
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.AssemblyInfoInputs.cache
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.AssemblyInfo.cs
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.csproj.CoreCompileInputs.cache
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.dll
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\refint\YadSara.Api.dll
+E:\תכנות\NET CORE\ד טבת\YadSara\YadSara\obj\Debug\net6.0\YadSara.Api.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\YadSara.Api.csproj": {}
+    "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\YadSara.Api.csproj": {}
   },
   "projects": {
-    "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+    "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj",
+        "projectUniqueName": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj",
         "projectName": "YadSara.Core",
-        "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj",
+        "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\obj\\",
+        "outputPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj": {
+    "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
+        "projectUniqueName": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
         "projectName": "YadSara.Data",
-        "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
+        "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\obj\\",
+        "outputPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
-                "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
+              "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+                "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj": {
+    "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj",
+        "projectUniqueName": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj",
         "projectName": "YadSara.Service",
-        "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj",
+        "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\obj\\",
+        "outputPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,8 +166,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
-                "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
+              "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+                "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
               }
             }
           }
@@ -201,14 +201,14 @@
         }
       }
     },
-    "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\YadSara.Api.csproj": {
+    "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\YadSara.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\YadSara.Api.csproj",
+        "projectUniqueName": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\YadSara.Api.csproj",
         "projectName": "YadSara.Api",
-        "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\YadSara.Api.csproj",
+        "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\YadSara.Api.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\obj\\",
+        "outputPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -230,14 +230,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
-                "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
+              "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+                "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
               },
-              "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj": {
-                "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj"
+              "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj": {
+                "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj"
               },
-              "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj": {
-                "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj"
+              "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj": {
+                "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj"
               }
             }
           }

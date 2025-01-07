@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace YadSara.Data.Repositories
 {
@@ -18,7 +19,7 @@ namespace YadSara.Data.Repositories
         }
         public List<Lending> GetAll()
         {
-            return _context.Lending.ToList();
+            return _context.Lending.Include(x => x.Lender).Include(x=>x.Borrow).ToList();
         }
         public List<Lending> GetByTime(DateTime time)
         {
@@ -30,27 +31,31 @@ namespace YadSara.Data.Repositories
         }
         public List<Lending> GetByLandB(string borrowId, string lenderId)
         {
-            return _context.Lending.ToList().FindAll(li => li.borrowId == borrowId && li.lenderId == lenderId);
+            return _context.Lending.ToList().FindAll(li => li.BorrowId == borrowId && li.LenderId == lenderId);
         }
         public Lending Update(Lending lending)
         {
             var index = _context.Lending.ToList().FindIndex(f => f.LendingId == lending.LendingId);
             _context.Lending.ToList()[index].TimeLending = lending.TimeLending;
-            _context.Lending.ToList()[index].deadlineLending = lending.deadlineLending;
+            _context.Lending.ToList()[index].DeadlineLending = lending.DeadlineLending;
             _context.Lending.ToList()[index].IsReturned = lending.IsReturned;
             _context.Lending.ToList()[index].IdEquipment = lending.IdEquipment;
-            _context.Lending.ToList()[index].lenderId = lending.lenderId;
-            _context.Lending.ToList()[index].borrowId = lending.borrowId;
+            _context.Lending.ToList()[index].LenderId = lending.LenderId;
+            _context.Lending.ToList()[index].BorrowId = lending.BorrowId;
+            _context.SaveChanges();
             return lending;
         }
-        public void Delete(int id)
+        public Lending Delete(int id)
         {
-            var index = _context.Lending.ToList().FindIndex(f => f.LendingId.Equals(id));
-            _context.Lending.ToList().RemoveAt(index);
+            var l = GetById(id);
+            _context.Lending.ToList().Remove(l);
+            _context.SaveChanges();
+            return l ;
         }
         public Lending Add(Lending lending)
         {
             _context.Lending.Add(lending);
+            _context.SaveChanges();
             return lending;
         }
 

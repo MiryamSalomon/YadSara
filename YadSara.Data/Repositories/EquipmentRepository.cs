@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace YadSara.Data.Repositories
 {
@@ -18,31 +19,35 @@ namespace YadSara.Data.Repositories
         }
         public List<Equipment> GetAll()
         {
-            return _context.Equipment.ToList();
+            return _context.Equipment.Include(x=>x.Lender).ToList();
         }
         public Equipment GetById(int id)
         {
-            return _context.Equipment.FirstOrDefault(bN => bN.idEquipment.Equals( id));
+            return _context.Equipment.FirstOrDefault(bN => bN.IdEquipment.Equals( id));
         }
         public Equipment Update(Equipment equipment)
         {
-            var index = _context.Equipment.ToList().FindIndex(f => f.idEquipment == equipment.idEquipment);
-            _context.Equipment.ToList()[index].idEquipment = equipment.idEquipment;
-            _context.Equipment.ToList()[index].nameEquipment = equipment.nameEquipment;
-            _context.Equipment.ToList()[index].nameEquipmentck = equipment.nameEquipmentck;
-            _context.Equipment.ToList()[index].currentquantity = equipment.currentquantity;
-            _context.Equipment.ToList()[index].deposit = equipment.deposit;
-            _context.Equipment.ToList()[index].lenderId = equipment.lenderId;
+            var index = _context.Equipment.ToList().FindIndex(f => f.IdEquipment == equipment.IdEquipment);
+            _context.Equipment.ToList()[index].IdEquipment = equipment.IdEquipment;
+            _context.Equipment.ToList()[index].NameEquipment = equipment.NameEquipment;
+            _context.Equipment.ToList()[index].NameEquipmentck = equipment.NameEquipmentck;
+            _context.Equipment.ToList()[index].Currentquantity = equipment.Currentquantity;
+            _context.Equipment.ToList()[index].Deposit = equipment.Deposit;
+            _context.Equipment.ToList()[index].LenderId = equipment.LenderId;
+            _context.SaveChanges();
             return equipment;
         }
-        public void Delete(int id)
+        public Equipment Delete(int id)
         {
-            var index = _context.Equipment.ToList().FindIndex(f => f.idEquipment.Equals(id));
-            _context.Equipment.ToList().RemoveAt(index);
+            var e = GetById(id);
+            _context.Equipment.ToList().Remove(e);
+            _context.SaveChanges();
+            return e;
         }
         public Equipment Add(Equipment equipment)
         {
             _context.Equipment.Add(equipment);
+            _context.SaveChanges();
             return equipment;
         }
 

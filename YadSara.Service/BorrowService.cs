@@ -31,9 +31,9 @@ namespace YadSara.Service
         {
             return _borrowRepository.Update(borrow);
         }
-        public void DeleteBorrow(string id)
+        public Borrow DeleteBorrow(string id)
         {
-             _borrowRepository.Delete(id);
+            return _borrowRepository.Delete(id);
         }
         public Borrow AddBorrow(Borrow borrow)
         {

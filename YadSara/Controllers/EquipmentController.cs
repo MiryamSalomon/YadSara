@@ -42,7 +42,7 @@ namespace YadSara.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Equipment e)
         {
-            var equipment = _equipmentService.GetEquipment(e.idEquipment);
+            var equipment = _equipmentService.GetEquipment(e.IdEquipment);
             if (equipment == null)
             {
                 return Ok(_equipmentService.AddEquipment(e));
@@ -54,7 +54,7 @@ namespace YadSara.Controllers
         [HttpPut("")]
         public ActionResult Put( [FromBody] Equipment e)
         {
-            var equipment = _equipmentService.GetEquipment(e.idEquipment);
+            var equipment = _equipmentService.GetEquipment(e.IdEquipment);
             if (equipment == null)
             {
                 return NotFound();
@@ -75,7 +75,7 @@ namespace YadSara.Controllers
                 return NotFound();
             }
 
-            return Ok(_equipmentService.DeleteEquipment(idEquipment);
+            return Ok(_equipmentService.DeleteEquipment(idEquipment));
         }
     }
 }

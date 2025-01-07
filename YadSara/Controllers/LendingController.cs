@@ -65,7 +65,7 @@ namespace YadSara.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Lending l)
         {
-            var lending = _lendingService.GetLending(lenderId);
+            var lending = _lendingService.GetLending(l.LendingId);
             if (lending == null)
             {
                 return Ok(_lendingService.AddLending(l));
@@ -77,7 +77,7 @@ namespace YadSara.Controllers
         [HttpPut("{id}")]
         public ActionResult Put([FromBody] Lending l)
         {
-            var lending = lendingService.GetLending(l.LendingId);
+            var lending = _lendingService.GetLending(l.LendingId);
             if (lending == null)
             {
                 return NotFound();
@@ -91,13 +91,13 @@ namespace YadSara.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var lending = lendingService.GetLending(id);
+            var lending = _lendingService.GetLending(id);
             if (lending == null)
             {
                 return NotFound();
             }
 
-            return Ok(_lendingService.DeleteLending(id););
+            return Ok(_lendingService.DeleteLending(id));
             
         }
     }

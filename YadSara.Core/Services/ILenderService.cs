@@ -12,7 +12,7 @@ namespace YadSara.Core.Services
         public List<Lender> GetList();
         public Lender GetLender(string id);
         public Lender UpdateLender(Lender l);
-        public void DeleteLender(string id);
+        public Lender DeleteLender(string id);
         public Lender AddLender(Lender lender);
 
     }

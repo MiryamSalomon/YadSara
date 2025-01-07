@@ -30,9 +30,9 @@ namespace YadSara.Service
         {
             return _lenderRepository.Update(lender);
         }
-        public void DeleteLender(string id)
+        public Lender DeleteLender(string id)
         {
-             _lenderRepository.Delete(id);
+            return _lenderRepository.Delete(id);
         }
         public Lender AddLender(Lender lender)
         {

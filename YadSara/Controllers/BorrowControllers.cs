@@ -39,7 +39,7 @@ namespace YadSara.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Borrow b)
         {
-            var borrow = _borrowService.GetBorrow(b.borrowId);
+            var borrow = _borrowService.GetBorrow(b.BorrowId);
             if (borrow == null)
             {
                return Ok(_borrowService.AddBorrow(b));
@@ -50,7 +50,7 @@ namespace YadSara.Controllers
         [HttpPut("{borrow}")]
         public ActionResult Put( [FromBody] Borrow b)
         {
-            var borrow = _borrowService.GetBorrow(b.borrowId);
+            var borrow = _borrowService.GetBorrow(b.BorrowId);
             if (borrow == null)
             {
                 return NotFound();

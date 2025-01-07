@@ -32,9 +32,9 @@ namespace YadSara.Service
         {
             return _equipmentRepository.Update(equipment);
         }
-        public void DeleteEquipment(int id)
+        public Equipment DeleteEquipment(int id)
         {
-             _equipmentRepository.Delete(id);
+           return  _equipmentRepository.Delete(id);
         }
         public Equipment AddEquipment (Equipment  equipment)
         {

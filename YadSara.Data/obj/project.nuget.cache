@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OyLuCbQvhniWN1Ki0nBkukrQ/9xbvBScm09cL2Ieu8h0bUR7unEmTt4guF3uUB8f+s8Kn0rio+XoGij+qGRcyA==",
+  "dgSpecHash": "U5xk+lv1Hp+bT8T11Hvcr2Z3JRelWm1WxpFOVlmx/3vznwSrusLNqCL3kiLoRB38uYT/Gp/mqA1KZ1xRQ+/cLQ==",
   "success": true,
-  "projectFilePath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
+  "projectFilePath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

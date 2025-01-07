@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace YadSara.Data.Repositories
 {
@@ -24,6 +25,7 @@ namespace YadSara.Data.Repositories
         public City Add(City city)
         {
             _context.City.Add(city);
+            _context.SaveChanges();
             return city;
         }
 

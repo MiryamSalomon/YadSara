@@ -15,21 +15,26 @@ namespace YadSara.Core.Entities
     {
 
         [Key]
-        public string borrowId { get; set; }
-        public string borrowName { get; set;}
-        public string phone { get; set; }
-        public string address { get; set;}
-        public int cityId { get; set;}
+        public string BorrowId { get; set; }
+        public string BorrowName { get; set;}
+        public string Phone { get; set; }
+        public string Address { get; set;}
+  
+        //public int cityId { get; set;}
+        public City City { get; set; }
 
-        public Borrow(string borrowId, string borrowName, string phone, string address, int cityId)
-        {
-            this.borrowId = borrowId;
-            this.borrowName = borrowName;
-            this.phone = phone;
-            this.address = address;
-            this.cityId = cityId;
+        public List<Lending> Lendings { get; set; }
 
-        }
+
+        //public Borrow(string borrowId, string borrowName, string phone, string address, int cityId)
+        //{
+        //    this.borrowId = borrowId;
+        //    this.borrowName = borrowName;
+        //    this.phone = phone;
+        //    this.address = address;
+        //    this.cityId = cityId;
+
+        //}
 
 
     }

@@ -12,5 +12,6 @@ namespace YadSara.Core.Services
         public List<City> GetList();
         public City AddCity(City city);
 
+
     }
 }

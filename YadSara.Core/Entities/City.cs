@@ -7,10 +7,11 @@ namespace YadSara.Core.Entities
         [Key]
         public int CityId { get; set; }
         public string CityName { get; set; }
-        public City(int cityId, string cityName)
-        {
-            CityId = cityId;
-            CityName = cityName;
-        }
+        public List<Lender> Lenders { get; set; }
+        //public City(int cityId, string cityName)
+        //{
+        //    CityId = cityId;
+        //    CityName = cityName;
+        //}
     }
 }

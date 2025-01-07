@@ -12,7 +12,7 @@ namespace YadSara.Core.Repositories
         public List<Equipment> GetAll();
         public Equipment GetById(int id);
         public Equipment Update(Equipment equipment);
-        public void Delete(int id);
+        public Equipment Delete(int id);
         public Equipment Add(Equipment equipment);
 
     }

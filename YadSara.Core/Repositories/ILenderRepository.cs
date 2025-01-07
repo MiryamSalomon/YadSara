@@ -11,7 +11,7 @@ namespace YadSara.Core.Repositories
         public List<Lender> GetAll();
         public Lender GetById(string id);
         public Lender Update(Lender lender);
-        public void Delete(string id);
+        public Lender Delete(string id);
         public Lender Add(Lender lender );
 
     }

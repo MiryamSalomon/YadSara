@@ -41,7 +41,7 @@ namespace YadSara.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] Lender l)
         {
-            var lender = _lenderService.GetLender(l.lenderId);
+            var lender = _lenderService.GetLender(l.LenderId);
             if (lender == null)
             {
                 return Ok(_lenderService.AddLender(l));
@@ -53,7 +53,7 @@ namespace YadSara.Controllers
         [HttpPut("{id}")]
         public ActionResult Put( [FromBody] Lender l)
         {
-            var lender = _lenderService.GetLender(l.lenderId);
+            var lender = _lenderService.GetLender(l.LenderId);
             if (lender == null)
             {
                 return NotFound();
@@ -74,7 +74,7 @@ namespace YadSara.Controllers
                 return NotFound();
             }
             
-            return Ok(_lenderService.DeleteLender(lenderId););
+            return Ok(_lenderService.DeleteLender(lenderId));
         }
     }
 }

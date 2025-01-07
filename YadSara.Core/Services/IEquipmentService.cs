@@ -12,7 +12,7 @@ namespace YadSara.Core.Services
         public List<Equipment> GetList();
         public Equipment GetEquipment(int id);
         public Equipment UpdateEquipment(Equipment e);
-        public void DeleteEquipment(int id);
+        public Equipment DeleteEquipment(int id);
         public Equipment AddEquipment(Equipment equipment);
 
     }

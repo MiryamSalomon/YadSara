@@ -2490,11 +2490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\YadSara.Api.csproj",
+      "projectUniqueName": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\YadSara.Api.csproj",
       "projectName": "YadSara.Api",
-      "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\YadSara.Api.csproj",
+      "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\YadSara.Api.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara\\obj\\",
+      "outputPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2516,14 +2516,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
-              "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
+            "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj": {
+              "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Core\\YadSara.Core.csproj"
             },
-            "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj": {
-              "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Data\\YadSara.Data.csproj"
+            "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj": {
+              "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Data\\YadSara.Data.csproj"
             },
-            "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj": {
-              "projectPath": "F:\\תכנות\\ד כסלו\\YadSara\\YadSara.Service\\YadSara.Service.csproj"
+            "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj": {
+              "projectPath": "E:\\תכנות\\NET CORE\\ד טבת\\YadSara\\YadSara.Service\\YadSara.Service.csproj"
             }
           }
         }
