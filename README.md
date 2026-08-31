@@ -1,39 +1,46 @@
 # YadSara
 
-![GitHub Actions](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
+Web API (ASP.NET Core 6) for managing equipment lending between lenders (משאילים) and borrowers (שואלים) across cities.
 
-## Description
-YadSara is a comprehensive solution for [brief description of your project]. It is designed to [describe key functionality].
+## Solution structure
 
-## Features
-- Feature 1: [Description]
-- Feature 2: [Description]
-
-## Installation
-```bash
-# Install instructions
+```
+YadSara/
+├── YadSara.sln
+├── YadSara/            # YadSara.Api - Web API project (Controllers, Program.cs)
+├── YadSara.Core/       # Entities and repository/service interfaces
+├── YadSara.Data/       # EF Core DbContext, migrations, repository implementations
+└── YadSara.Service/    # Service layer implementations
 ```
 
-## Usage
-[Provide examples of usage]
+Entities: `City`, `Lender`, `Borrow`, `Equipment`, `Lending`.
 
-## Contributing
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
+## Prerequisites
+
+- .NET 6 SDK
+- SQL Server or SQL Server LocalDB
+- `dotnet-ef` CLI tool: `dotnet tool install --global dotnet-ef`
+
+## Setup
+
+1. Set your connection string in `YadSara/YadSara/appsettings.json` under `ConnectionStrings:DefaultConnection` (defaults to LocalDB).
+2. Create the database:
+   ```bash
+   cd YadSara/YadSara
+   dotnet ef database update --project ../YadSara.Data/YadSara.Data.csproj --startup-project YadSara.Api.csproj
+   ```
+3. Run the API:
+   ```bash
+   dotnet run
+   ```
+4. Open Swagger UI at `http://localhost:<port>/swagger`.
+
+## API
+
+Each entity exposes standard REST endpoints under `/api/<Entity>` (GET, GET/{id}, POST, PUT/{id}, DELETE/{id}). `Lending` additionally exposes `GET /api/Lending/by-date/{date}` and `GET /api/Lending/by-borrower-lender?borrowId=&lenderId=`.
 
 ## License
 [MIT](LICENSE)
 
 ## Contact
-Miryam Salomon - [your.email@example.com](mailto:your.email@example.com)
-
-## Status
-Project is in development/maintenance
-
-## Badges
-![Badges](https://img.shields.io/badge/status-active-brightgreen)  
-![Issues](https://img.shields.io/github/issues/MiryamSalomon/YadSara)  
-
-## Acknowledgments
-- [OpenAI](https://openai.com)
-- [GitHub](https://github.com)
+Miryam Salomon
