@@ -7,11 +7,11 @@ namespace YadSara.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BorrowControllers : ControllerBase
+    public class BorrowController : ControllerBase
     {
         private readonly IBorrowService _borrowService;
 
-        public BorrowControllers(IBorrowService borrowService)
+        public BorrowController(IBorrowService borrowService)
         {
             _borrowService = borrowService;
         }

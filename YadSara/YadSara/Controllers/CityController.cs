@@ -7,11 +7,11 @@ namespace YadSara.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CityControllers : ControllerBase
+    public class CityController : ControllerBase
     {
         private readonly ICityService _cityService;
 
-        public CityControllers(ICityService cityService)
+        public CityController(ICityService cityService)
         {
             _cityService = cityService;
         }
