@@ -131,6 +131,55 @@
   .status.ok { display: block; background: #f0fff4; color: var(--success); border: 1px solid #c6f6d5; }
   .status.err { display: block; background: #fff5f5; color: var(--danger); border: 1px solid #fed7d7; }
   .empty { color: #888; padding: 16px; text-align: center; }
+  .ref-link {
+    border: none;
+    background: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 0;
+  }
+  .ref-link:hover { color: var(--primary-dark); }
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    min-width: 320px;
+    max-width: 90vw;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  }
+  .modal-box h3 { margin-top: 0; }
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #888;
+  }
+  .modal-close:hover { color: var(--danger); }
+  #modal-body dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 20px;
+    margin: 0;
+  }
+  #modal-body dt { font-weight: bold; color: #555; }
+  #modal-body dd { margin: 0; }
 </style>
 </head>
 <body>
@@ -142,6 +191,14 @@
 
 <nav id="tabs"></nav>
 <main id="panels"></main>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" type="button" onclick="closeModal()">✕</button>
+    <h3 id="modal-title"></h3>
+    <div id="modal-body"></div>
+  </div>
+</div>
 
 <script>
 const ENTITIES = {
@@ -188,7 +245,7 @@ const ENTITIES = {
       { key: "nameEquipmentck", label: "כמות כוללת", type: "number", required: true },
       { key: "currentquantity", label: "כמות זמינה", type: "number", required: true },
       { key: "deposit", label: "פיקדון", type: "text", required: true },
-      { key: "lenderId", label: "מזהה משאיל", type: "text", required: true },
+      { key: "lenderId", label: "משאיל", type: "text", required: true, refEntity: "Lender", refDisplay: "lenderName" },
     ],
   },
   Lending: {
@@ -201,8 +258,8 @@ const ENTITIES = {
       { key: "deadlineLending", label: "תאריך יעד", type: "datetime-local", required: true },
       { key: "isReturned", label: "הוחזר?", type: "checkbox" },
       { key: "idEquipment", label: "מזהה ציוד", type: "number", required: true },
-      { key: "lenderId", label: "מזהה משאיל", type: "text", required: true },
-      { key: "borrowId", label: "מזהה שואל", type: "text", required: true },
+      { key: "lenderId", label: "משאיל", type: "text", required: true, refEntity: "Lender", refDisplay: "lenderName" },
+      { key: "borrowId", label: "שואל", type: "text", required: true, refEntity: "Borrow", refDisplay: "borrowName" },
     ],
   },
 };
@@ -210,6 +267,44 @@ const ENTITIES = {
 const tabsEl = document.getElementById("tabs");
 const panelsEl = document.getElementById("panels");
 let activeKey = null;
+
+// Cache of referenced entities (e.g. Lender/Borrow), keyed by entity name -> { id: item }
+const refCache = {};
+
+async function ensureRefCache(entityKey) {
+  if (refCache[entityKey]) return refCache[entityKey];
+  const cfg = ENTITIES[entityKey];
+  const items = await api(cfg.endpoint);
+  const map = {};
+  items.forEach((it) => { map[it[cfg.pk]] = it; });
+  refCache[entityKey] = map;
+  return map;
+}
+
+function openDetailModal(entityKey, id) {
+  const cfg = ENTITIES[entityKey];
+  const item = (refCache[entityKey] || {})[id];
+  document.getElementById("modal-title").textContent = `${cfg.label} — פרטים`;
+  const body = document.getElementById("modal-body");
+  if (!item) {
+    body.innerHTML = "<p>הרשומה לא נמצאה (ייתכן שנמחקה).</p>";
+  } else {
+    body.innerHTML = "<dl>" + cfg.fields.map((f) => {
+      let v = item[f.key];
+      if (f.type === "checkbox") v = v ? "כן" : "לא";
+      return `<dt>${f.label}</dt><dd>${v ?? ""}</dd>`;
+    }).join("") + "</dl>";
+  }
+  document.getElementById("modal-overlay").classList.add("open");
+}
+
+function closeModal() {
+  document.getElementById("modal-overlay").classList.remove("open");
+}
+
+document.getElementById("modal-overlay").addEventListener("click", (e) => {
+  if (e.target.id === "modal-overlay") closeModal();
+});
 
 function buildUI() {
   Object.entries(ENTITIES).forEach(([key, cfg], i) => {
@@ -316,7 +411,11 @@ async function loadList(key) {
   const container = document.getElementById(`table-${key}`);
   container.innerHTML = "טוען...";
   try {
-    const items = await api(cfg.endpoint);
+    const refEntities = [...new Set(cfg.fields.filter((f) => f.refEntity).map((f) => f.refEntity))];
+    const [, items] = await Promise.all([
+      Promise.all(refEntities.map(ensureRefCache)),
+      api(cfg.endpoint),
+    ]);
     renderTable(key, cfg, items);
   } catch (err) {
     container.innerHTML = "";
@@ -339,8 +438,13 @@ function renderTable(key, cfg, items) {
   items.forEach((item) => {
     const tr = document.createElement("tr");
     tr.innerHTML = cfg.fields.map((f) => {
-      let v = item[f.key];
-      if (f.type === "checkbox") v = v ? "✔️" : "—";
+      const v = item[f.key];
+      if (f.type === "checkbox") return `<td>${v ? "✔️" : "—"}</td>`;
+      if (f.refEntity) {
+        const refItem = (refCache[f.refEntity] || {})[v];
+        const displayName = refItem ? refItem[f.refDisplay] : v;
+        return `<td><button type="button" class="ref-link" data-ref-entity="${f.refEntity}" data-ref-id="${v ?? ""}">${displayName ?? ""}</button></td>`;
+      }
       return `<td>${v ?? ""}</td>`;
     }).join("");
 
@@ -361,6 +465,13 @@ function renderTable(key, cfg, items) {
     tbody.appendChild(tr);
   });
   table.appendChild(tbody);
+
+  table.addEventListener("click", (e) => {
+    const btn = e.target.closest(".ref-link");
+    if (!btn) return;
+    openDetailModal(btn.dataset.refEntity, btn.dataset.refId);
+  });
+
   container.innerHTML = "";
   container.appendChild(table);
 }
@@ -388,6 +499,7 @@ async function deleteItem(key, cfg, item) {
   if (!confirm("למחוק את הרשומה?")) return;
   try {
     await api(`${cfg.endpoint}/${encodeURIComponent(item[cfg.pk])}`, { method: "DELETE" });
+    delete refCache[key];
     showStatus(key, "נמחק בהצלחה", false);
     loadList(key);
   } catch (err) {
@@ -434,6 +546,7 @@ async function onSubmit(e, key, cfg) {
       });
       showStatus(key, "נוסף בהצלחה", false);
     }
+    delete refCache[key];
     form.elements[cfg.pk].disabled = false;
     resetForm(key);
     loadList(key);

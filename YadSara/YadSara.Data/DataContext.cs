@@ -31,7 +31,7 @@ namespace YadSara.Data
             modelBuilder.Entity<City>().HasData(
                 new City(1, "בני ברק"));
             modelBuilder.Entity<Equipment>().HasData(
-                new Equipment(1, "מחולל חמצן", 5, 2, "צק פיקדון", "254698745"));
+                new Equipment(1, "מחולל חמצן", 5, 2, "צק פיקדון", "254698743"));
             modelBuilder.Entity<Lender>().HasData(
                 new Lender("254698743", "david", "0556987459", "Rabbi Akiva", 1));
             modelBuilder.Entity<Lending>().HasData(
