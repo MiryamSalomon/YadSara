@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YadSara.Data", "YadSara.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YadSara.Service", "YadSara.Service\YadSara.Service.csproj", "{842F81E7-54BA-4FAD-9DC6-A9213C5E24BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YadSara.Tests", "YadSara.Tests\YadSara.Tests.csproj", "{FEF10E34-E411-41F9-B777-320EFB35E9C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{842F81E7-54BA-4FAD-9DC6-A9213C5E24BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{842F81E7-54BA-4FAD-9DC6-A9213C5E24BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{842F81E7-54BA-4FAD-9DC6-A9213C5E24BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF10E34-E411-41F9-B777-320EFB35E9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF10E34-E411-41F9-B777-320EFB35E9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF10E34-E411-41F9-B777-320EFB35E9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF10E34-E411-41F9-B777-320EFB35E9C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
