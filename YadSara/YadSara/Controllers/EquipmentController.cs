@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using YadSara.Core.Repositories;
-using YadSara.Core.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YadSara.Core.Entities;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using YadSara.Core.Services;
 
 namespace YadSara.Controllers
 {
@@ -11,47 +9,68 @@ namespace YadSara.Controllers
     [ApiController]
     public class EquipmentController : ControllerBase
     {
-     
         private readonly IEquipmentService _equipmentService;
-        public  EquipmentController(IEquipmentService equipmentService)
+
+        public EquipmentController(IEquipmentService equipmentService)
         {
             _equipmentService = equipmentService;
         }
 
         // GET: api/<EquipmentController>
         [HttpGet]
-        public IEnumerable<Equipment> Get()
+        public async Task<ActionResult<IEnumerable<Equipment>>> Get()
         {
-            return _equipmentService.GetList() ;
+            return Ok(await _equipmentService.GetListAsync());
         }
 
         // GET api/<EquipmentController>/5
         [HttpGet("{id}")]
-        public Equipment Get(int id)
+        public async Task<ActionResult<Equipment>> Get(int id)
         {
-            return _equipmentService.GetEquipment(id);
+            var equipment = await _equipmentService.GetEquipmentAsync(id);
+            return equipment == null ? NotFound() : Ok(equipment);
         }
 
         // POST api/<EquipmentController>
         [HttpPost]
-        public Equipment Post([FromBody] Equipment e)
+        public async Task<ActionResult<Equipment>> Post([FromBody] Equipment e)
         {
-            return _equipmentService.AddEquipment(e);
+            try
+            {
+                var added = await _equipmentService.AddEquipmentAsync(e);
+                return CreatedAtAction(nameof(Get), new { id = added.idEquipment }, added);
+            }
+            catch (DbUpdateException)
+            {
+                return Conflict($"Equipment with id '{e.idEquipment}' already exists.");
+            }
         }
 
         // PUT api/<EquipmentController>/5
-        [HttpPut("")]
-        public Equipment Put( [FromBody] Equipment e)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Equipment>> Put(int id, [FromBody] Equipment e)
         {
-          return  _equipmentService.UpdateEquipment(e);
+            if (id != e.idEquipment)
+            {
+                return BadRequest("Route id does not match body id.");
+            }
 
+            try
+            {
+                return Ok(await _equipmentService.UpdateEquipmentAsync(e));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         // DELETE api/<EquipmentController>/5
-        [HttpDelete("{idEquipment}")]
-        public void Delete(int idEquipment)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
         {
-            _equipmentService.DeleteEquipment(idEquipment);
+            var deleted = await _equipmentService.DeleteEquipmentAsync(id);
+            return deleted ? NoContent() : NotFound();
         }
     }
 }

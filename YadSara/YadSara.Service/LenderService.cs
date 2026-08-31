@@ -1,42 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YadSara.Core.Services;
+using Microsoft.Extensions.Logging;
 using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
+using YadSara.Core.Services;
 
 namespace YadSara.Service
 {
-    public class LenderService: ILenderService
+    public class LenderService : ILenderService
     {
         private readonly ILenderRepository _lenderRepository;
-        public LenderService(ILenderRepository lenderRepository)
+        private readonly ILogger<LenderService> _logger;
+
+        public LenderService(ILenderRepository lenderRepository, ILogger<LenderService> logger)
         {
             _lenderRepository = lenderRepository;
+            _logger = logger;
         }
 
-        public List<Lender> GetList()
+        public Task<List<Lender>> GetListAsync() => _lenderRepository.GetAllAsync();
+
+        public Task<Lender?> GetLenderAsync(string id) => _lenderRepository.GetByIdAsync(id);
+
+        public async Task<Lender> UpdateLenderAsync(Lender lender)
         {
-            return _lenderRepository.GetAll();
-        }
-        public Lender GetLender(string id)
-        {
-            return _lenderRepository.GetById(id);
+            var updated = await _lenderRepository.UpdateAsync(lender);
+            _logger.LogInformation("Updated lender {LenderId}", lender.lenderId);
+            return updated;
         }
 
-        public Lender UpdateLender(Lender lender)
+        public async Task<bool> DeleteLenderAsync(string id)
         {
-            return _lenderRepository.Update(lender);
+            var deleted = await _lenderRepository.DeleteAsync(id);
+            if (deleted)
+            {
+                _logger.LogInformation("Deleted lender {LenderId}", id);
+            }
+            else
+            {
+                _logger.LogWarning("Attempted to delete non-existent lender {LenderId}", id);
+            }
+            return deleted;
         }
-        public void DeleteLender(string id)
+
+        public async Task<Lender> AddLenderAsync(Lender lender)
         {
-             _lenderRepository.Delete(id);
-        }
-        public Lender AddLender(Lender lender)
-        {
-            return _lenderRepository.Add(lender);
+            var added = await _lenderRepository.AddAsync(lender);
+            _logger.LogInformation("Added lender {LenderId}", added.lenderId);
+            return added;
         }
     }
 }

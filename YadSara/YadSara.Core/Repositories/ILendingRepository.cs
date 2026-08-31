@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using YadSara.Core.Entities;
+
 namespace YadSara.Core.Repositories
 {
     public interface ILendingRepository
     {
-        public List<Lending> GetAll();
-        public List<Lending> GetByTime(DateTime dateTime);
-
-        public List<Lending> GetByLandB(string borrowId, string lenderId);
-        public Lending GetById(int id);
-        public Lending Update(Lending lending);
-        public void Delete(int id);
-         public Lending Add(Lending lending);
-
+        Task<List<Lending>> GetAllAsync();
+        Task<List<Lending>> GetByTimeAsync(DateTime dateTime);
+        Task<List<Lending>> GetByLandBAsync(string borrowId, string lenderId);
+        Task<Lending?> GetByIdAsync(int id);
+        Task<Lending> UpdateAsync(Lending lending);
+        Task<bool> DeleteAsync(int id);
+        Task<Lending> AddAsync(Lending lending);
     }
 }

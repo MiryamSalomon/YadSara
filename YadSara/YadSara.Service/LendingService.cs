@@ -1,50 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using YadSara.Core.Services;
+using Microsoft.Extensions.Logging;
 using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
+using YadSara.Core.Services;
 
 namespace YadSara.Service
 {
-    public class LendingService: ILendingService
+    public class LendingService : ILendingService
     {
         private readonly ILendingRepository _lendingRepository;
-        public LendingService(ILendingRepository lendingRepository)
+        private readonly ILogger<LendingService> _logger;
+
+        public LendingService(ILendingRepository lendingRepository, ILogger<LendingService> logger)
         {
             _lendingRepository = lendingRepository;
+            _logger = logger;
         }
 
-        public List<Lending> GetList()
+        public Task<List<Lending>> GetListAsync() => _lendingRepository.GetAllAsync();
+
+        public Task<List<Lending>> GetListByDateAsync(DateTime date) => _lendingRepository.GetByTimeAsync(date);
+
+        public Task<List<Lending>> GetListLandBAsync(string borrowId, string lenderId) =>
+            _lendingRepository.GetByLandBAsync(borrowId, lenderId);
+
+        public Task<Lending?> GetLendingAsync(int id) => _lendingRepository.GetByIdAsync(id);
+
+        public async Task<Lending> UpdateLendingAsync(Lending lending)
         {
-            return _lendingRepository.GetAll();
-        }
-        public List<Lending> GetListByDate(DateTime date)
-        { 
-            return _lendingRepository.GetByTime(date);
-        }
-        public List<Lending> GetListLandB(string borrowId, string lenderId)
-        {
-            return _lendingRepository.GetByLandB(borrowId, lenderId);
-        }
-        public Lending GetLending(int id)
-        {
-            return _lendingRepository.GetById(id);
+            var updated = await _lendingRepository.UpdateAsync(lending);
+            _logger.LogInformation("Updated lending {LendingId}", lending.LendingId);
+            return updated;
         }
 
-        public Lending UpdateLending(Lending lending)
+        public async Task<bool> DeleteLendingAsync(int id)
         {
-            return _lendingRepository.Update(lending);
+            var deleted = await _lendingRepository.DeleteAsync(id);
+            if (deleted)
+            {
+                _logger.LogInformation("Deleted lending {LendingId}", id);
+            }
+            else
+            {
+                _logger.LogWarning("Attempted to delete non-existent lending {LendingId}", id);
+            }
+            return deleted;
         }
-        public void DeleteLending (int id)
+
+        public async Task<Lending> AddLendingAsync(Lending lending)
         {
-             _lendingRepository.Delete(id);
-        }
-        public Lending AddLending(Lending lending)
-        {
-          return  _lendingRepository.Add(lending);
+            var added = await _lendingRepository.AddAsync(lending);
+            _logger.LogInformation("Added lending {LendingId}", added.LendingId);
+            return added;
         }
     }
 }

@@ -1,11 +1,6 @@
-﻿using YadSara.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace YadSara.Data.Repositories
 {
@@ -17,33 +12,49 @@ namespace YadSara.Data.Repositories
         {
             _context = context;
         }
-        public List<Borrow> GetAll()
+
+        public async Task<List<Borrow>> GetAllAsync()
         {
-            return _context.Borrow;
-        }
-        public Borrow GetById(string id)
-        {
-            return _context.Borrow.FirstOrDefault(bN => bN.borrowId == id);
-        }
-        public Borrow Update(Borrow borrow)
-        {
-            var index = _context.Borrow.FindIndex(f => f.borrowId == borrow.borrowId);
-            _context.Borrow[index].borrowName = borrow.borrowName;
-            _context.Borrow[index].address = borrow.address;
-            _context.Borrow[index].phone = borrow.phone;
-            _context.Borrow[index].cityId = borrow.cityId;
-            return borrow;
-        }
-        public void Delete(string id)
-        {
-            var index = _context.Borrow.FindIndex(f => f.borrowId.Equals( id));
-            _context.Borrow.RemoveAt(index);
-        }
-        public Borrow Add(Borrow borrow )
-        {
-            _context.Borrow.Add(borrow);
-            return borrow;
+            return await _context.Borrow.AsNoTracking().ToListAsync();
         }
 
+        public async Task<Borrow?> GetByIdAsync(string id)
+        {
+            return await _context.Borrow.FindAsync(id);
+        }
+
+        public async Task<Borrow> UpdateAsync(Borrow borrow)
+        {
+            var existing = await _context.Borrow.FindAsync(borrow.borrowId)
+                ?? throw new KeyNotFoundException($"Borrow with id '{borrow.borrowId}' was not found.");
+
+            existing.borrowName = borrow.borrowName;
+            existing.address = borrow.address;
+            existing.phone = borrow.phone;
+            existing.cityId = borrow.cityId;
+
+            await _context.SaveChangesAsync();
+            return existing;
+        }
+
+        public async Task<bool> DeleteAsync(string id)
+        {
+            var existing = await _context.Borrow.FindAsync(id);
+            if (existing == null)
+            {
+                return false;
+            }
+
+            _context.Borrow.Remove(existing);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<Borrow> AddAsync(Borrow borrow)
+        {
+            _context.Borrow.Add(borrow);
+            await _context.SaveChangesAsync();
+            return borrow;
+        }
     }
 }

@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YadSara.Core.Entities;
 
 namespace YadSara.Core.Services
 {
     public interface IEquipmentService
     {
-        public List<Equipment> GetList();
-        public Equipment GetEquipment(int id);
-        public Equipment UpdateEquipment(Equipment e);
-        public void DeleteEquipment(int id);
-        public Equipment AddEquipment(Equipment equipment);
-
+        Task<List<Equipment>> GetListAsync();
+        Task<Equipment?> GetEquipmentAsync(int id);
+        Task<Equipment> UpdateEquipmentAsync(Equipment e);
+        Task<bool> DeleteEquipmentAsync(int id);
+        Task<Equipment> AddEquipmentAsync(Equipment equipment);
     }
 }

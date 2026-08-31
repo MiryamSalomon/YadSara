@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YadSara.Core.Entities;
 
 namespace YadSara.Core.Services
 {
     public interface ILenderService
     {
-        public List<Lender> GetList();
-        public Lender GetLender(string id);
-        public Lender UpdateLender(Lender l);
-        public void DeleteLender(string id);
-        public Lender AddLender(Lender lender);
-
+        Task<List<Lender>> GetListAsync();
+        Task<Lender?> GetLenderAsync(string id);
+        Task<Lender> UpdateLenderAsync(Lender l);
+        Task<bool> DeleteLenderAsync(string id);
+        Task<Lender> AddLenderAsync(Lender lender);
     }
 }

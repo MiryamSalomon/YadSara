@@ -1,14 +1,10 @@
-﻿using YadSara.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YadSara.Data.Repositories
 {
-    public class CityRepository: ICityRepository
+    public class CityRepository : ICityRepository
     {
         private readonly DataContext _context;
 
@@ -16,31 +12,46 @@ namespace YadSara.Data.Repositories
         {
             _context = context;
         }
-        public List<City> GetAll()
+
+        public async Task<List<City>> GetAllAsync()
         {
-            return _context.City;
-        }
-        public City GetById(int id)
-        {
-            return _context.City.FirstOrDefault(bN => bN.CityId.Equals(id));
-        }
-        public City Update(City c)
-        {
-            var index = _context.City.FindIndex(f => f.CityId == c.CityId);
-            _context.City[index].CityName = c.CityName;
-            _context.City[index].CityId = c.CityId;
-            return c;
-        }
-        public void Delete(int id)
-        {
-            var index = _context.City.FindIndex(f => f.CityId.Equals( id));
-            _context.City.RemoveAt(index);
-        }
-        public City Add(City city)
-        {
-            _context.City.Add(city);
-            return city;
+            return await _context.City.AsNoTracking().ToListAsync();
         }
 
+        public async Task<City?> GetByIdAsync(int id)
+        {
+            return await _context.City.FindAsync(id);
+        }
+
+        public async Task<City> UpdateAsync(City c)
+        {
+            var existing = await _context.City.FindAsync(c.CityId)
+                ?? throw new KeyNotFoundException($"City with id '{c.CityId}' was not found.");
+
+            existing.CityName = c.CityName;
+
+            await _context.SaveChangesAsync();
+            return existing;
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var existing = await _context.City.FindAsync(id);
+            if (existing == null)
+            {
+                return false;
+            }
+
+            _context.City.Remove(existing);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<City> AddAsync(City city)
+        {
+            _context.City.Add(city);
+            await _context.SaveChangesAsync();
+            return city;
+        }
     }
 }

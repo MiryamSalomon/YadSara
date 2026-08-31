@@ -1,17 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YadSara.Core.Entities;
 using YadSara.Core.Services;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace YadSara.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
     public class LenderController : ControllerBase
     {
-        private readonly  ILenderService _lenderService;
+        private readonly ILenderService _lenderService;
+
         public LenderController(ILenderService lenderService)
         {
             _lenderService = lenderService;
@@ -19,38 +18,59 @@ namespace YadSara.Controllers
 
         // GET: api/<LenderController>
         [HttpGet]
-        public IEnumerable<Lender> Get()
+        public async Task<ActionResult<IEnumerable<Lender>>> Get()
         {
-            return _lenderService.GetList();
+            return Ok(await _lenderService.GetListAsync());
         }
 
         // GET api/<LenderController>/5
-        [HttpGet("{LenderId}")]
-        public Lender Get(string id)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Lender>> Get(string id)
         {
-            return _lenderService.GetLender(id);
+            var lender = await _lenderService.GetLenderAsync(id);
+            return lender == null ? NotFound() : Ok(lender);
         }
 
         // POST api/<LenderController>
         [HttpPost]
-        public Lender  Post([FromBody] Lender l)
+        public async Task<ActionResult<Lender>> Post([FromBody] Lender l)
         {
-            return _lenderService.AddLender(l);
+            try
+            {
+                var added = await _lenderService.AddLenderAsync(l);
+                return CreatedAtAction(nameof(Get), new { id = added.lenderId }, added);
+            }
+            catch (DbUpdateException)
+            {
+                return Conflict($"A lender with id '{l.lenderId}' already exists.");
+            }
         }
 
         // PUT api/<LenderController>/5
         [HttpPut("{id}")]
-        public Lender Put( [FromBody] Lender l)
+        public async Task<ActionResult<Lender>> Put(string id, [FromBody] Lender l)
         {
-            return _lenderService.UpdateLender(l);
+            if (id != l.lenderId)
+            {
+                return BadRequest("Route id does not match body id.");
+            }
 
+            try
+            {
+                return Ok(await _lenderService.UpdateLenderAsync(l));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         // DELETE api/<LenderController>/5
         [HttpDelete("{id}")]
-        public void Delete(string lenderId)
+        public async Task<IActionResult> Delete(string id)
         {
-           _lenderService.DeleteLender(lenderId);
+            var deleted = await _lenderService.DeleteLenderAsync(id);
+            return deleted ? NoContent() : NotFound();
         }
     }
 }

@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YadSara.Core.Entities;
 using YadSara.Core.Services;
-using YadSara.Service;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace YadSara.Controllers
 {
@@ -12,6 +10,7 @@ namespace YadSara.Controllers
     public class CityControllers : ControllerBase
     {
         private readonly ICityService _cityService;
+
         public CityControllers(ICityService cityService)
         {
             _cityService = cityService;
@@ -19,17 +18,59 @@ namespace YadSara.Controllers
 
         // GET: api/<CityController>
         [HttpGet]
-        public IEnumerable<City> Get()
+        public async Task<ActionResult<IEnumerable<City>>> Get()
         {
-            return _cityService.GetList();
+            return Ok(await _cityService.GetListAsync());
+        }
+
+        // GET api/<CityController>/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<City>> Get(int id)
+        {
+            var city = await _cityService.GetCityAsync(id);
+            return city == null ? NotFound() : Ok(city);
         }
 
         // POST api/<CityController>
         [HttpPost]
-        public City Post([FromBody] City c)
+        public async Task<ActionResult<City>> Post([FromBody] City c)
         {
-          return _cityService.AddCity(c);
+            try
+            {
+                var added = await _cityService.AddCityAsync(c);
+                return CreatedAtAction(nameof(Get), new { id = added.CityId }, added);
+            }
+            catch (DbUpdateException)
+            {
+                return Conflict($"A city with id '{c.CityId}' already exists.");
+            }
         }
 
+        // PUT api/<CityController>/5
+        [HttpPut("{id}")]
+        public async Task<ActionResult<City>> Put(int id, [FromBody] City c)
+        {
+            if (id != c.CityId)
+            {
+                return BadRequest("Route id does not match body id.");
+            }
+
+            try
+            {
+                return Ok(await _cityService.UpdateCityAsync(c));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        // DELETE api/<CityController>/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var deleted = await _cityService.DeleteCityAsync(id);
+            return deleted ? NoContent() : NotFound();
+        }
     }
 }

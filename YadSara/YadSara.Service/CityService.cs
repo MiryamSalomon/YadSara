@@ -1,42 +1,51 @@
-﻿using YadSara.Core.Entities;
+using Microsoft.Extensions.Logging;
+using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
 using YadSara.Core.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YadSara.Service
 {
-    public class CityService: ICityService
+    public class CityService : ICityService
     {
         private readonly ICityRepository _cityRepository;
-        public CityService(ICityRepository cityRepository)
+        private readonly ILogger<CityService> _logger;
+
+        public CityService(ICityRepository cityRepository, ILogger<CityService> logger)
         {
             _cityRepository = cityRepository;
+            _logger = logger;
         }
 
-        public List<City> GetList()
+        public Task<List<City>> GetListAsync() => _cityRepository.GetAllAsync();
+
+        public Task<City?> GetCityAsync(int id) => _cityRepository.GetByIdAsync(id);
+
+        public async Task<City> UpdateCityAsync(City city)
         {
-            return _cityRepository.GetAll();
-        }
-        public City GetCity(int id)
-        {
-            return _cityRepository.GetById(id);
+            var updated = await _cityRepository.UpdateAsync(city);
+            _logger.LogInformation("Updated city {CityId}", city.CityId);
+            return updated;
         }
 
-        public City UpdateCity(City city)
+        public async Task<bool> DeleteCityAsync(int id)
         {
-            return _cityRepository.Update(city);
+            var deleted = await _cityRepository.DeleteAsync(id);
+            if (deleted)
+            {
+                _logger.LogInformation("Deleted city {CityId}", id);
+            }
+            else
+            {
+                _logger.LogWarning("Attempted to delete non-existent city {CityId}", id);
+            }
+            return deleted;
         }
-        public void DeleteCity(int id)
+
+        public async Task<City> AddCityAsync(City city)
         {
-             _cityRepository.Delete(id);
-        }
-        public City AddCity(City city)
-        {
-            return _cityRepository.Add(city);
+            var added = await _cityRepository.AddAsync(city);
+            _logger.LogInformation("Added city {CityId}", added.CityId);
+            return added;
         }
     }
 }

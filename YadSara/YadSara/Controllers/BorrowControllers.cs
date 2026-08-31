@@ -1,8 +1,7 @@
-﻿using YadSara.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using YadSara.Core.Entities;
 using YadSara.Core.Services;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace YadSara.Controllers
 {
@@ -11,44 +10,67 @@ namespace YadSara.Controllers
     public class BorrowControllers : ControllerBase
     {
         private readonly IBorrowService _borrowService;
-       public BorrowControllers(IBorrowService borrowService)
+
+        public BorrowControllers(IBorrowService borrowService)
         {
             _borrowService = borrowService;
         }
 
         // GET: api/<Borrow>
         [HttpGet]
-        public IEnumerable<Borrow> Get()
+        public async Task<ActionResult<IEnumerable<Borrow>>> Get()
         {
-            return _borrowService.GetList();
+            return Ok(await _borrowService.GetListAsync());
         }
 
         // GET api/<Borrow>/5
         [HttpGet("{borrowId}")]
-        public Borrow Get(string borrowId)
+        public async Task<ActionResult<Borrow>> Get(string borrowId)
         {
-            return _borrowService.GetBorrow(borrowId);
+            var borrow = await _borrowService.GetBorrowAsync(borrowId);
+            return borrow == null ? NotFound() : Ok(borrow);
         }
 
         // POST api/<Borrow>
         [HttpPost]
-        public Borrow Post([FromBody] Borrow b)
+        public async Task<ActionResult<Borrow>> Post([FromBody] Borrow b)
         {
-            return _borrowService.AddBorrow(b);
+            try
+            {
+                var added = await _borrowService.AddBorrowAsync(b);
+                return CreatedAtAction(nameof(Get), new { borrowId = added.borrowId }, added);
+            }
+            catch (DbUpdateException)
+            {
+                return Conflict($"A borrow with id '{b.borrowId}' already exists.");
+            }
         }
 
         // PUT api/<Borrow>/5
-        [HttpPut("{borrow}")]
-        public Borrow Put( [FromBody] Borrow b)
+        [HttpPut("{borrowId}")]
+        public async Task<ActionResult<Borrow>> Put(string borrowId, [FromBody] Borrow b)
         {
-            return _borrowService.UpdateBorrow(b);
+            if (borrowId != b.borrowId)
+            {
+                return BadRequest("Route id does not match body id.");
+            }
+
+            try
+            {
+                return Ok(await _borrowService.UpdateBorrowAsync(b));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         // DELETE api/<Borrow>/5
-        [HttpDelete("{id}")]
-        public void Delete(string borrowId)
+        [HttpDelete("{borrowId}")]
+        public async Task<IActionResult> Delete(string borrowId)
         {
-           _borrowService.DeleteBorrow(borrowId);
+            var deleted = await _borrowService.DeleteBorrowAsync(borrowId);
+            return deleted ? NoContent() : NotFound();
         }
     }
 }

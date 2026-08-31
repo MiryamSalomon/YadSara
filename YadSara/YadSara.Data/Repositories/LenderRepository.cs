@@ -1,14 +1,10 @@
-﻿using YadSara.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YadSara.Data.Repositories
 {
-    public class LenderRepository: ILenderRepository
+    public class LenderRepository : ILenderRepository
     {
         private readonly DataContext _context;
 
@@ -16,32 +12,48 @@ namespace YadSara.Data.Repositories
         {
             _context = context;
         }
-        public List<Lender> GetAll()
+
+        public async Task<List<Lender>> GetAllAsync()
         {
-            return _context.Lender;
+            return await _context.Lender.AsNoTracking().ToListAsync();
         }
-        public Lender GetById(string id)
+
+        public async Task<Lender?> GetByIdAsync(string id)
         {
-            return _context.Lender.FirstOrDefault(bN => bN.lenderId.Equals(id));
+            return await _context.Lender.FindAsync(id);
         }
-        public Lender Update(Lender lender)
+
+        public async Task<Lender> UpdateAsync(Lender lender)
         {
-            var index = _context.Lender.FindIndex(f => f.lenderId == lender.lenderId);
-            _context.Lender[index].lenderName = lender.lenderName;
-            _context.Lender[index].lenderId = lender.lenderId;
-            _context.Lender[index].lenderPhone = lender .lenderPhone;
-            _context.Lender[index].lenderAdress = lender.lenderAdress;
-            _context.Lender[index].lenderCityId = lender.lenderCityId;
-            return lender;
+            var existing = await _context.Lender.FindAsync(lender.lenderId)
+                ?? throw new KeyNotFoundException($"Lender with id '{lender.lenderId}' was not found.");
+
+            existing.lenderName = lender.lenderName;
+            existing.lenderPhone = lender.lenderPhone;
+            existing.lenderAdress = lender.lenderAdress;
+            existing.lenderCityId = lender.lenderCityId;
+
+            await _context.SaveChangesAsync();
+            return existing;
         }
-        public void Delete(string id)
+
+        public async Task<bool> DeleteAsync(string id)
         {
-            var index = _context.Lender.FindIndex(f => f.lenderId.Equals(id));
-            _context.Lender.RemoveAt(index);
+            var existing = await _context.Lender.FindAsync(id);
+            if (existing == null)
+            {
+                return false;
+            }
+
+            _context.Lender.Remove(existing);
+            await _context.SaveChangesAsync();
+            return true;
         }
-        public Lender Add(Lender lender)
+
+        public async Task<Lender> AddAsync(Lender lender)
         {
             _context.Lender.Add(lender);
+            await _context.SaveChangesAsync();
             return lender;
         }
     }

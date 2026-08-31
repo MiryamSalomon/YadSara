@@ -1,10 +1,6 @@
-﻿using YadSara.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using YadSara.Core.Entities;
 using YadSara.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YadSara.Data.Repositories
 {
@@ -16,43 +12,65 @@ namespace YadSara.Data.Repositories
         {
             _context = context;
         }
-        public List<Lending> GetAll()
+
+        public async Task<List<Lending>> GetAllAsync()
         {
-            return _context.Lending;
-        }
-        public List<Lending> GetByTime(DateTime time)
-        {
-          return  _context.Lending.FindAll(bN => bN.TimeLending.Equals(time));
-        }
-        public Lending GetById(int id)
-        {
-            return _context.Lending.FirstOrDefault(bN => bN.LendingId.Equals(id));
-        }
-        public List<Lending> GetByLandB(string borrowId, string lenderId)
-        {
-            return _context.Lending.FindAll(li => li.borrowId == borrowId && li.lenderId == lenderId);
-        }
-        public Lending Update(Lending lending)
-        {
-            var index = _context.Lending.FindIndex(f => f.LendingId == lending.LendingId);
-            _context.Lending[index].TimeLending = lending.TimeLending;
-            _context.Lending[index].deadlineLending = lending.deadlineLending;
-            _context.Lending[index].IsReturned = lending.IsReturned;
-            _context.Lending[index].IdEquipment = lending.IdEquipment;
-            _context.Lending[index].lenderId = lending.lenderId;
-            _context.Lending[index].borrowId = lending.borrowId;
-            return lending;
-        }
-        public void Delete(int id)
-        {
-            var index = _context.Lending.FindIndex(f => f.LendingId.Equals(id));
-            _context.Lending.RemoveAt(index);
-        }
-        public Lending Add(Lending lending)
-        {
-            _context.Lending.Add(lending);
-            return lending;
+            return await _context.Lending.AsNoTracking().ToListAsync();
         }
 
+        public async Task<List<Lending>> GetByTimeAsync(DateTime dateTime)
+        {
+            return await _context.Lending.AsNoTracking()
+                .Where(l => l.TimeLending.Equals(dateTime))
+                .ToListAsync();
+        }
+
+        public async Task<List<Lending>> GetByLandBAsync(string borrowId, string lenderId)
+        {
+            return await _context.Lending.AsNoTracking()
+                .Where(l => l.borrowId == borrowId && l.lenderId == lenderId)
+                .ToListAsync();
+        }
+
+        public async Task<Lending?> GetByIdAsync(int id)
+        {
+            return await _context.Lending.FindAsync(id);
+        }
+
+        public async Task<Lending> UpdateAsync(Lending lending)
+        {
+            var existing = await _context.Lending.FindAsync(lending.LendingId)
+                ?? throw new KeyNotFoundException($"Lending with id '{lending.LendingId}' was not found.");
+
+            existing.TimeLending = lending.TimeLending;
+            existing.deadlineLending = lending.deadlineLending;
+            existing.IsReturned = lending.IsReturned;
+            existing.IdEquipment = lending.IdEquipment;
+            existing.lenderId = lending.lenderId;
+            existing.borrowId = lending.borrowId;
+
+            await _context.SaveChangesAsync();
+            return existing;
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var existing = await _context.Lending.FindAsync(id);
+            if (existing == null)
+            {
+                return false;
+            }
+
+            _context.Lending.Remove(existing);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<Lending> AddAsync(Lending lending)
+        {
+            _context.Lending.Add(lending);
+            await _context.SaveChangesAsync();
+            return lending;
+        }
     }
 }
