@@ -131,6 +131,19 @@
   .status.ok { display: block; background: #f0fff4; color: var(--success); border: 1px solid #c6f6d5; }
   .status.err { display: block; background: #fff5f5; color: var(--danger); border: 1px solid #fed7d7; }
   .empty { color: #888; padding: 16px; text-align: center; }
+  .toggle-pill {
+    border: none;
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  .toggle-pill:hover { transform: scale(1.04); }
+  .toggle-pill:disabled { opacity: 0.5; cursor: wait; transform: none; }
+  .toggle-pill.returned { background: #dcfce7; color: #15803d; }
+  .toggle-pill.pending { background: #fee2e2; color: #b91c1c; }
   .ref-link {
     border: none;
     background: none;
@@ -443,12 +456,16 @@ function renderTable(key, cfg, items) {
       const v = item[f.key];
 
       if (f.type === "checkbox") {
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.checked = !!v;
-        checkbox.title = "לחצי כדי לעדכן מיידית";
-        checkbox.onchange = () => quickToggle(key, cfg, item, f.key, checkbox.checked, checkbox);
-        td.appendChild(checkbox);
+        const pill = document.createElement("button");
+        pill.type = "button";
+        pill.className = "toggle-pill " + (v ? "returned" : "pending");
+        pill.textContent = v ? "✔ הוחזר" : "✗ לא הוחזר";
+        pill.title = "לחצי כדי לעדכן מיידית";
+        pill.onclick = () => {
+          pill.disabled = true;
+          quickToggle(key, cfg, item, f.key, !v);
+        };
+        td.appendChild(pill);
       } else if (f.refEntity) {
         const btn = document.createElement("button");
         btn.type = "button";
@@ -487,28 +504,27 @@ function renderTable(key, cfg, items) {
 }
 
 // Updates a single field on an existing record in place (e.g. the "isReturned"
-// checkbox) without opening the full edit form. Sends the complete current
-// record with just that one field changed, since the API only supports PUT.
-async function quickToggle(key, cfg, item, fieldKey, newValue, checkboxEl) {
+// pill) without opening the full edit form. Sends the complete current record
+// with just that one field changed, since the API only supports PUT. Reloads
+// the list afterwards either way — on success it shows the new state, on
+// failure it shows the real (unchanged) server state, so there's nothing to
+// manually revert.
+async function quickToggle(key, cfg, item, fieldKey, newValue) {
   const payload = {};
   cfg.fields.forEach((f) => { payload[f.key] = item[f.key]; });
   payload[fieldKey] = newValue;
 
-  checkboxEl.disabled = true;
   try {
     await api(`${cfg.endpoint}/${encodeURIComponent(item[cfg.pk])}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     });
-    item[fieldKey] = newValue;
     showStatus(key, "עודכן בהצלחה", false);
   } catch (err) {
-    checkboxEl.checked = !newValue;
     showStatus(key, "שגיאה בעדכון: " + err.message, true);
-  } finally {
-    checkboxEl.disabled = false;
   }
+  loadList(key);
 }
 
 function startEdit(key, cfg, item) {
