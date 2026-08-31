@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C46FFEA2-3DD9-4EDC-BE17-F65D6B76B413}|YadSara.Data\\YadSara.Data.csproj|\\\\zz-filesrv\\handesaim2\\group b\\netcore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\yadsara p\\yadsara\\yadsara.data\\repositories\\equipmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{842F81E7-54BA-4FAD-9DC6-A9213C5E24BE}|YadSara.Service\\YadSara.Service.csproj|\\\\zz-filesrv\\handesaim2\\group b\\netcore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\yadsara p\\yadsara\\yadsara.service\\borrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46FFEA2-3DD9-4EDC-BE17-F65D6B76B413}|YadSara.Data\\YadSara.Data.csproj|\\\\zz-filesrv\\handesaim2\\group b\\netcore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\yadsara p\\yadsara\\yadsara.data\\repositories\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EquipmentRepository.cs",
+              "DocumentMoniker": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\YadSara.Data\\Repositories\\EquipmentRepository.cs",
+              "RelativeDocumentMoniker": "YadSara.Data\\Repositories\\EquipmentRepository.cs",
+              "ToolTip": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\YadSara.Data\\Repositories\\EquipmentRepository.cs",
+              "RelativeToolTip": "YadSara.Data\\Repositories\\EquipmentRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:10:18.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowService.cs",
+              "DocumentMoniker": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\YadSara.Service\\BorrowService.cs",
+              "RelativeDocumentMoniker": "YadSara.Service\\BorrowService.cs",
+              "ToolTip": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\YadSara.Service\\BorrowService.cs",
+              "RelativeToolTip": "YadSara.Service\\BorrowService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:59:33.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowRepository.cs",
+              "DocumentMoniker": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\YadSara.Data\\Repositories\\BorrowRepository.cs",
+              "RelativeDocumentMoniker": "YadSara.Data\\Repositories\\BorrowRepository.cs",
+              "ToolTip": "\\\\ZZ-FILESRV\\Handesaim2\\Group B\\NetCore\\\u05DE\u05E8\u05D9\u05DD \u05E1\u05DC\u05D5\u05DE\u05D5\u05DF\\\u05DB\u05D2 \u05D7\u05E9\u05D5\u05D5\u05DF \u05D7\u05D3\u05E9\\YadSara P\\YadSara\\YadSara.Data\\Repositories\\BorrowRepository.cs",
+              "RelativeToolTip": "YadSara.Data\\Repositories\\BorrowRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:52:15.038Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
