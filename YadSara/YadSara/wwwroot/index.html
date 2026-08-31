@@ -437,16 +437,32 @@ function renderTable(key, cfg, items) {
   const tbody = document.createElement("tbody");
   items.forEach((item) => {
     const tr = document.createElement("tr");
-    tr.innerHTML = cfg.fields.map((f) => {
+
+    cfg.fields.forEach((f) => {
+      const td = document.createElement("td");
       const v = item[f.key];
-      if (f.type === "checkbox") return `<td>${v ? "✔️" : "—"}</td>`;
-      if (f.refEntity) {
+
+      if (f.type === "checkbox") {
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = !!v;
+        checkbox.title = "לחצי כדי לעדכן מיידית";
+        checkbox.onchange = () => quickToggle(key, cfg, item, f.key, checkbox.checked, checkbox);
+        td.appendChild(checkbox);
+      } else if (f.refEntity) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "ref-link";
         const refItem = (refCache[f.refEntity] || {})[v];
-        const displayName = refItem ? refItem[f.refDisplay] : v;
-        return `<td><button type="button" class="ref-link" data-ref-entity="${f.refEntity}" data-ref-id="${v ?? ""}">${displayName ?? ""}</button></td>`;
+        btn.textContent = refItem ? refItem[f.refDisplay] : (v ?? "");
+        btn.onclick = () => openDetailModal(f.refEntity, v);
+        td.appendChild(btn);
+      } else {
+        td.textContent = v ?? "";
       }
-      return `<td>${v ?? ""}</td>`;
-    }).join("");
+
+      tr.appendChild(td);
+    });
 
     const actionsTd = document.createElement("td");
     actionsTd.className = "row-actions";
@@ -466,14 +482,33 @@ function renderTable(key, cfg, items) {
   });
   table.appendChild(tbody);
 
-  table.addEventListener("click", (e) => {
-    const btn = e.target.closest(".ref-link");
-    if (!btn) return;
-    openDetailModal(btn.dataset.refEntity, btn.dataset.refId);
-  });
-
   container.innerHTML = "";
   container.appendChild(table);
+}
+
+// Updates a single field on an existing record in place (e.g. the "isReturned"
+// checkbox) without opening the full edit form. Sends the complete current
+// record with just that one field changed, since the API only supports PUT.
+async function quickToggle(key, cfg, item, fieldKey, newValue, checkboxEl) {
+  const payload = {};
+  cfg.fields.forEach((f) => { payload[f.key] = item[f.key]; });
+  payload[fieldKey] = newValue;
+
+  checkboxEl.disabled = true;
+  try {
+    await api(`${cfg.endpoint}/${encodeURIComponent(item[cfg.pk])}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    item[fieldKey] = newValue;
+    showStatus(key, "עודכן בהצלחה", false);
+  } catch (err) {
+    checkboxEl.checked = !newValue;
+    showStatus(key, "שגיאה בעדכון: " + err.message, true);
+  } finally {
+    checkboxEl.disabled = false;
+  }
 }
 
 function startEdit(key, cfg, item) {
