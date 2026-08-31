@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\YadSara.Api.props" />
-</Project>

@@ -1,0 +1,34 @@
+## .NET / Visual Studio
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Visual Studio cache/options
+.vs/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Build logs
+*.binlog
+
+# OS files
+.DS_Store
+Thumbs.db
