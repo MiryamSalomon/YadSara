@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YadSara</title>
+<style>
+  :root {
+    --primary: #667eea;
+    --primary-dark: #4c51bf;
+    --bg: #f5f6fa;
+    --card: #ffffff;
+    --border: #e2e4ea;
+    --danger: #e53e3e;
+    --success: #38a169;
+    --text: #2d3748;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    color: #fff;
+    padding: 24px 32px;
+  }
+  header h1 { margin: 0; font-size: 28px; }
+  header p { margin: 4px 0 0; opacity: 0.9; }
+  nav {
+    display: flex;
+    gap: 8px;
+    padding: 16px 32px 0;
+    flex-wrap: wrap;
+  }
+  nav button {
+    border: none;
+    background: var(--card);
+    color: var(--text);
+    padding: 10px 18px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid var(--border);
+    border-bottom: none;
+  }
+  nav button.active {
+    background: var(--primary);
+    color: #fff;
+    font-weight: bold;
+  }
+  main {
+    padding: 24px 32px 48px;
+  }
+  .panel {
+    display: none;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0 8px 8px 8px;
+    padding: 20px;
+  }
+  .panel.active { display: block; }
+  .panel h2 { margin-top: 0; }
+  form.entity-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: end;
+    margin-bottom: 20px;
+    padding: 14px;
+    background: #fafbff;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+  }
+  form.entity-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #555;
+    gap: 4px;
+  }
+  form.entity-form input, form.entity-form select {
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 130px;
+  }
+  form.entity-form input[type=checkbox] { min-width: auto; }
+  .btn {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    background: var(--primary);
+  }
+  .btn:hover { background: var(--primary-dark); }
+  .btn.cancel { background: #a0aec0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: right;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { background: #f0f2fb; }
+  tr:hover { background: #f9faff; }
+  .row-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+  }
+  .row-actions .edit { color: var(--primary); }
+  .row-actions .delete { color: var(--danger); }
+  .status {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: none;
+  }
+  .status.ok { display: block; background: #f0fff4; color: var(--success); border: 1px solid #c6f6d5; }
+  .status.err { display: block; background: #fff5f5; color: var(--danger); border: 1px solid #fed7d7; }
+  .empty { color: #888; padding: 16px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🛠️ YadSara</h1>
+  <p>ניהול השאלת ציוד — ערים · משאילים · שואלים · ציוד · השאלות</p>
+</header>
+
+<nav id="tabs"></nav>
+<main id="panels"></main>
+
+<script>
+const ENTITIES = {
+  City: {
+    label: "ערים",
+    endpoint: "/api/City",
+    pk: "cityId",
+    fields: [
+      { key: "cityId", label: "מזהה עיר", type: "number", required: true },
+      { key: "cityName", label: "שם עיר", type: "text", required: true },
+    ],
+  },
+  Lender: {
+    label: "משאילים",
+    endpoint: "/api/Lender",
+    pk: "lenderId",
+    fields: [
+      { key: "lenderId", label: "מזהה", type: "text", required: true },
+      { key: "lenderName", label: "שם", type: "text", required: true },
+      { key: "lenderPhone", label: "טלפון", type: "text", required: true },
+      { key: "lenderAdress", label: "כתובת", type: "text", required: true },
+      { key: "lenderCityId", label: "מזהה עיר", type: "number", required: true },
+    ],
+  },
+  Borrow: {
+    label: "שואלים",
+    endpoint: "/api/Borrow",
+    pk: "borrowId",
+    fields: [
+      { key: "borrowId", label: "מזהה", type: "text", required: true },
+      { key: "borrowName", label: "שם", type: "text", required: true },
+      { key: "phone", label: "טלפון", type: "text", required: true },
+      { key: "address", label: "כתובת", type: "text", required: true },
+      { key: "cityId", label: "מזהה עיר", type: "number", required: true },
+    ],
+  },
+  Equipment: {
+    label: "ציוד",
+    endpoint: "/api/Equipment",
+    pk: "idEquipment",
+    fields: [
+      { key: "idEquipment", label: "מזהה ציוד", type: "number", required: true },
+      { key: "nameEquipment", label: "שם ציוד", type: "text", required: true },
+      { key: "nameEquipmentck", label: "כמות כוללת", type: "number", required: true },
+      { key: "currentquantity", label: "כמות זמינה", type: "number", required: true },
+      { key: "deposit", label: "פיקדון", type: "text", required: true },
+      { key: "lenderId", label: "מזהה משאיל", type: "text", required: true },
+    ],
+  },
+  Lending: {
+    label: "השאלות",
+    endpoint: "/api/Lending",
+    pk: "lendingId",
+    fields: [
+      { key: "lendingId", label: "מזהה השאלה", type: "number", required: true },
+      { key: "timeLending", label: "תאריך השאלה", type: "datetime-local", required: true },
+      { key: "deadlineLending", label: "תאריך יעד", type: "datetime-local", required: true },
+      { key: "isReturned", label: "הוחזר?", type: "checkbox" },
+      { key: "idEquipment", label: "מזהה ציוד", type: "number", required: true },
+      { key: "lenderId", label: "מזהה משאיל", type: "text", required: true },
+      { key: "borrowId", label: "מזהה שואל", type: "text", required: true },
+    ],
+  },
+};
+
+const tabsEl = document.getElementById("tabs");
+const panelsEl = document.getElementById("panels");
+let activeKey = null;
+
+function buildUI() {
+  Object.entries(ENTITIES).forEach(([key, cfg], i) => {
+    const btn = document.createElement("button");
+    btn.textContent = cfg.label;
+    btn.onclick = () => showTab(key);
+    btn.dataset.key = key;
+    tabsEl.appendChild(btn);
+
+    const panel = document.createElement("div");
+    panel.className = "panel";
+    panel.id = "panel-" + key;
+    panel.innerHTML = `
+      <h2>${cfg.label}</h2>
+      <div class="status" id="status-${key}"></div>
+      <form class="entity-form" id="form-${key}"></form>
+      <div id="table-${key}"></div>
+    `;
+    panelsEl.appendChild(panel);
+
+    buildForm(key, cfg);
+    if (i === 0) activeKey = key;
+  });
+  showTab(activeKey);
+}
+
+function buildForm(key, cfg) {
+  const form = document.getElementById(`form-${key}`);
+  form.innerHTML = "";
+  cfg.fields.forEach((f) => {
+    const label = document.createElement("label");
+    let input;
+    if (f.type === "checkbox") {
+      input = document.createElement("input");
+      input.type = "checkbox";
+    } else {
+      input = document.createElement("input");
+      input.type = f.type;
+      if (f.required) input.required = true;
+    }
+    input.name = f.key;
+    label.appendChild(document.createTextNode(f.label));
+    label.appendChild(input);
+    form.appendChild(label);
+  });
+
+  const submitBtn = document.createElement("button");
+  submitBtn.type = "submit";
+  submitBtn.className = "btn";
+  submitBtn.textContent = "הוסף";
+  form.appendChild(submitBtn);
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.type = "button";
+  cancelBtn.className = "btn cancel";
+  cancelBtn.textContent = "בטל עריכה";
+  cancelBtn.style.display = "none";
+  cancelBtn.onclick = () => resetForm(key);
+  form.appendChild(cancelBtn);
+
+  form.dataset.mode = "create";
+  form.onsubmit = (e) => onSubmit(e, key, cfg);
+}
+
+function resetForm(key) {
+  const form = document.getElementById(`form-${key}`);
+  form.reset();
+  form.dataset.mode = "create";
+  delete form.dataset.editId;
+  form.querySelector("button[type=submit]").textContent = "הוסף";
+  form.querySelector(".cancel").style.display = "none";
+}
+
+function showTab(key) {
+  activeKey = key;
+  document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("active", b.dataset.key === key));
+  document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === "panel-" + key));
+  loadList(key);
+}
+
+function showStatus(key, message, isError) {
+  const el = document.getElementById(`status-${key}`);
+  el.textContent = message;
+  el.className = "status " + (isError ? "err" : "ok");
+  setTimeout(() => { el.className = "status"; }, 3500);
+}
+
+async function api(url, options) {
+  const res = await fetch(url, options);
+  if (!res.ok) {
+    let detail = res.statusText;
+    try {
+      const body = await res.json();
+      detail = body.title || body.error || JSON.stringify(body);
+    } catch {}
+    throw new Error(`${res.status}: ${detail}`);
+  }
+  if (res.status === 204) return null;
+  return res.json();
+}
+
+async function loadList(key) {
+  const cfg = ENTITIES[key];
+  const container = document.getElementById(`table-${key}`);
+  container.innerHTML = "טוען...";
+  try {
+    const items = await api(cfg.endpoint);
+    renderTable(key, cfg, items);
+  } catch (err) {
+    container.innerHTML = "";
+    showStatus(key, "שגיאה בטעינה: " + err.message, true);
+  }
+}
+
+function renderTable(key, cfg, items) {
+  const container = document.getElementById(`table-${key}`);
+  if (!items || items.length === 0) {
+    container.innerHTML = '<div class="empty">אין רשומות</div>';
+    return;
+  }
+  const table = document.createElement("table");
+  const thead = document.createElement("thead");
+  thead.innerHTML = "<tr>" + cfg.fields.map((f) => `<th>${f.label}</th>`).join("") + "<th></th></tr>";
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  items.forEach((item) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = cfg.fields.map((f) => {
+      let v = item[f.key];
+      if (f.type === "checkbox") v = v ? "✔️" : "—";
+      return `<td>${v ?? ""}</td>`;
+    }).join("");
+
+    const actionsTd = document.createElement("td");
+    actionsTd.className = "row-actions";
+    const editBtn = document.createElement("button");
+    editBtn.className = "edit";
+    editBtn.textContent = "✏️";
+    editBtn.onclick = () => startEdit(key, cfg, item);
+    const delBtn = document.createElement("button");
+    delBtn.className = "delete";
+    delBtn.textContent = "🗑️";
+    delBtn.onclick = () => deleteItem(key, cfg, item);
+    actionsTd.appendChild(editBtn);
+    actionsTd.appendChild(delBtn);
+    tr.appendChild(actionsTd);
+
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  container.innerHTML = "";
+  container.appendChild(table);
+}
+
+function startEdit(key, cfg, item) {
+  const form = document.getElementById(`form-${key}`);
+  cfg.fields.forEach((f) => {
+    const input = form.elements[f.key];
+    if (f.type === "checkbox") {
+      input.checked = !!item[f.key];
+    } else if (f.type === "datetime-local") {
+      input.value = item[f.key] ? item[f.key].substring(0, 16) : "";
+    } else {
+      input.value = item[f.key] ?? "";
+    }
+  });
+  form.elements[cfg.pk].disabled = true;
+  form.dataset.mode = "edit";
+  form.dataset.editId = item[cfg.pk];
+  form.querySelector("button[type=submit]").textContent = "עדכן";
+  form.querySelector(".cancel").style.display = "inline-block";
+}
+
+async function deleteItem(key, cfg, item) {
+  if (!confirm("למחוק את הרשומה?")) return;
+  try {
+    await api(`${cfg.endpoint}/${encodeURIComponent(item[cfg.pk])}`, { method: "DELETE" });
+    showStatus(key, "נמחק בהצלחה", false);
+    loadList(key);
+  } catch (err) {
+    showStatus(key, "שגיאה במחיקה: " + err.message, true);
+  }
+}
+
+function collectPayload(form, cfg) {
+  const payload = {};
+  cfg.fields.forEach((f) => {
+    const input = form.elements[f.key];
+    if (f.type === "checkbox") {
+      payload[f.key] = input.checked;
+    } else if (f.type === "number") {
+      payload[f.key] = input.value === "" ? null : Number(input.value);
+    } else if (f.type === "datetime-local") {
+      payload[f.key] = input.value ? new Date(input.value).toISOString() : null;
+    } else {
+      payload[f.key] = input.value;
+    }
+  });
+  return payload;
+}
+
+async function onSubmit(e, key, cfg) {
+  e.preventDefault();
+  const form = e.target;
+  const payload = collectPayload(form, cfg);
+
+  try {
+    if (form.dataset.mode === "edit") {
+      const id = form.dataset.editId;
+      await api(`${cfg.endpoint}/${encodeURIComponent(id)}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      showStatus(key, "עודכן בהצלחה", false);
+    } else {
+      await api(cfg.endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      showStatus(key, "נוסף בהצלחה", false);
+    }
+    form.elements[cfg.pk].disabled = false;
+    resetForm(key);
+    loadList(key);
+  } catch (err) {
+    showStatus(key, "שגיאה: " + err.message, true);
+  }
+}
+
+buildUI();
+</script>
+</body>
+</html>
