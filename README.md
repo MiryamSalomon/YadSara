@@ -10,6 +10,7 @@
 [![EF Core](https://img.shields.io/badge/EF_Core-512BD4?style=for-the-badge&logo=nuget&logoColor=white)](https://learn.microsoft.com/ef/core)
 [![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/sql-server)
 [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io)
+[![JavaScript](https://img.shields.io/badge/Vanilla_JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 
 <br/>
 
@@ -18,8 +19,8 @@
 
 <br/>
 
-> **A REST API for managing equipment lending between lenders (*משאילים*) and borrowers (*שואלים*)  
-> across cities — with full async EF Core persistence and validated CRUD on every entity.**
+> **A REST API + lightweight web UI for managing equipment lending between lenders (*משאילים*)  
+> and borrowers (*שואלים*) across cities — with full async EF Core persistence and validated CRUD on every entity.**
 
 </div>
 
@@ -65,6 +66,18 @@
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+### 🖥️ Web UI
+- Single-page vanilla HTML/JS frontend, served same-origin from `wwwroot` — no build step, no CORS
+- One tab per entity, each with a generated form + table wired to the REST API
+- Foreign keys (`lenderId` / `borrowId`) render as clickable **names**, opening a full detail popup instead of showing raw ids
+- One-click status pill to mark a lending returned, no full edit form needed
+
+</td>
+<td width="50%"></td>
+</tr>
 </table>
 
 ---
@@ -77,7 +90,8 @@ YadSara/
 │
 ├── YadSara/                  # YadSara.Api — Web API host
 │   ├── Controllers/          # Borrow · City · Equipment · Lender · Lending
-│   ├── Program.cs            # DI, DbContext, Swagger, global exception middleware
+│   ├── wwwroot/index.html    # Single-page web UI (static, served same-origin)
+│   ├── Program.cs            # DI, DbContext, Swagger, static files, global exception middleware
 │   └── appsettings.json      # Connection strings
 │
 ├── YadSara.Core/             # Entities + repository/service interfaces
@@ -124,7 +138,8 @@ dotnet ef database update --project ../YadSara.Data/YadSara.Data.csproj --startu
 dotnet run
 ```
 
-App runs at **`http://localhost:<port>`** · Interactive API docs at **`http://localhost:<port>/swagger`** 📖
+- Web UI at **`http://localhost:<port>/`** 🖥️
+- Interactive API docs at **`http://localhost:<port>/swagger`** 📖
 
 ---
 
